@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Vehicle Maintenance System</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f6f8;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+          url("/static/images/garage.jpg") center/cover no-repeat;
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      /* About Content */
+      .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px;
+        background-color: #fff;
+      }
+
+      .about-section h2 {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .about-section p {
+        max-width: 800px;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      /* Team Section */
+      .team {
+        background-color: #f9f9f9;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .team h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .team-member {
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 260px;
+        transition: transform 0.3s;
+      }
+
+      .team-member:hover {
+        transform: translateY(-10px);
+      }
+
+      .team-member img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .team-member h3 {
+        margin-top: 15px;
+        font-size: 1.2rem;
+        color: #007bff;
+      }
+
+      .team-member p {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .team-container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    {% include 'navbar.html' %}
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>About Our System</h1>
+      <p>
+        Empowering vehicle owners with a reliable platform for managing
+        maintenance, tracking service history, and staying road-ready.
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <h2>Who We Are</h2>
+      <p>
+        VehicleCare is a next-generation vehicle maintenance system designed to
+        simplify your life as a vehicle owner. From scheduling services and
+        tracking repairs to maintaining service logs and reminders — everything
+        is now just a click away. Our platform blends advanced technology with
+        user-friendly design to deliver the best care experience for your
+        vehicles.
+      </p>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+      <h2>Meet the Team</h2>
+      <div class="team-container">
+        <div class="team-member">
+          <img src="/static/images/team1.jpg" alt="Team Member 1" />
+          <h3>Ayesha Khan</h3>
+          <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="/static/images/team2.jpg" alt="Team Member 2" />
+          <h3>Rahul Verma</h3>
+          <p>UX Designer</p>
+        </div>
+        <div class="team-member">
+          <img src="/static/images/team3.jpg" alt="Team Member 3" />
+          <h3>Sameer Patel</h3>
+          <p>Backend Engineer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>&copy; 2025 VehicleCare. All rights reserved.</footer>
+  </body>
+</html>
