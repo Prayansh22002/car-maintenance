@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard - Vehicle Maintenance</title>
+    <link
+      rel="stylesheet"
+      href="C:\Users\nitin\Desktop\Vehical\Style\style.css"
+    />
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 380px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1d72b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #155d90;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  color: #555;
+}
+
+.dashboard {
+  text-align: center;
+}
+
+.dashboard h2 {
+  margin-bottom: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+  label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+  color: #333;
+}
+</style>
+  </head>
+  <body>
+    <div class="container dashboard">
+      <h2>Welcome to Your Dashboard</h2>
+      <div class="card">
+        <h3>Check Your Maintenance Status</h3>
+        <p>Check if Your Vehicle Needs Maintenance. <br><a href="#">Click Here</a></p>
+      </div>
+      <div class="card">
+        <h3>Customer Support</h3>
+        <p>Ask for Customer Support. <br><a href="#">Click Here</a></p>
+      </div>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="C:\Users\nitin\Desktop\Vehical\script\script.js"></script>
+  </body>
+</html>
